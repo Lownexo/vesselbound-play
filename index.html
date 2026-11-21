@@ -22,7 +22,7 @@
 <body>
   <canvas id="unity-canvas" tabindex="-1"></canvas>
   <div id="loading"><div>Vesselbound</div><div id="bar"><div id="fill"></div></div><div id="err"></div></div>
-  <script src="b20261121130253/WebGL.loader.js"></script>
+  <script src="b20261121131000/WebGL.loader.js"></script>
   <script>
     // server.json (kept current by tools/start-web-play.ps1) holds the live tunnel address, so one bookmark always works.
     // The game reads it from the page address as ?server=...
@@ -36,9 +36,9 @@
     } catch (e) { /* no server.json: offline play still works */ }
     createUnityInstance(document.querySelector("#unity-canvas"), {
       arguments: [],
-      dataUrl: "b20261121130253/WebGL.data.unityweb",
-      frameworkUrl: "b20261121130253/WebGL.framework.js.unityweb",
-      codeUrl: "b20261121130253/WebGL.wasm.unityweb",
+      dataUrl: "b20261121131000/WebGL.data.unityweb",
+      frameworkUrl: "b20261121131000/WebGL.framework.js.unityweb",
+      codeUrl: "b20261121131000/WebGL.wasm.unityweb",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "Vesselbound Dev",
       productName: "Vesselbound",
